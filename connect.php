@@ -1,11 +1,15 @@
-<?php 	$connection = mysql_connect('localhost', 'root', 'root');
+<?php 	
 
-		if (!$connection){
-			die("Database Connection Failed" . mysql_error());
-		}
+$servername = "localhost";
+$username = "cl53-ksp-gmx";
+$password = "C4GfU.2dn";
+$dbname = "cl53-ksp-gmx";
 
-		$select_db = mysql_select_db('Powerlifting Hub');
-		
-		if (!$select_db){
-			die("Database Selection Failed" . mysql_error());
-		} ?>
+// Create connection
+$conn = new mysqli($servername, $username, $password, $dbname);
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+
+?>

@@ -47,3 +47,11 @@
 .learn-more a {
   color: #00b0ff;
 }
+
+.loginSection{
+    margin-top:10px;
+}
+
+#hideAlert{
+    display:none;
+}
