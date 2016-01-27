@@ -36,9 +36,6 @@
         
         <div class="col col-sm-8">
             <div>
-                    <div class="alert alert-warning" role="alert">
-  <strong>Warning!</strong> Use KG for accurate Wilks, the lb conversion is still a work in progress.
-</div>
                             <div class="row">
                                 <div class="col-md-12 text-center">
                                     <h1>Wilks Calculator</h1>
