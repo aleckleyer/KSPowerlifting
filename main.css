@@ -55,3 +55,7 @@
 #hideAlert{
     display:none;
 }
+
+.linkDisabled{
+    cursor: not-allowed;
+}
