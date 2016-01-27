@@ -55,8 +55,8 @@ function wilks(){
 
         //Convert pounds into kilograms
         if(unit == 1) {
-            (bWeight / 2.20462262).toFixed(2);
-            (lWeight / 2.20462262).toFixed(2);
+            bWeight = (bWeight / 2.20462262).toFixed(2);
+            lWeight = (lWeight / 2.20462262).toFixed(2);
         }
 
 
