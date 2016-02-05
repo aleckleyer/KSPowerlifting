@@ -21,6 +21,7 @@
 </head>
 
 <body>
+  <div class="background"></div>
 
 
 
@@ -29,19 +30,20 @@
 
 
 
-<div class="container-fluid">
+<div class="container">
     <div class="row">
         
        <?php include 'leftpanel.html'; ?>
         
-        <div class="col col-sm-8">
+        <div class="col-md-offset-1 col-md-6 mainPanel">
             <div>
-                            <div class="row">
-                                <div class="col-md-12 text-center">
-                                    <h1>Wilks Calculator</h1>
-                                    <p class="lead">Find your Wilks value to determine your strength relative to your bodyweight.</p>
-                                </div>
-                            </div>
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <h1>Wilks Calculator</h1>
+                            <hr>
+                            <p class="lead">Just want your Wilks? Fill this quick form out!</p>
+                        </div>
+                    </div>
                         <form class="form-horizontal">
                             <!-- Text input-->
                             <div class="form-group">
@@ -92,7 +94,7 @@
                             <!-- Button -->
                             <div class="form-group">
                                 <label class="col-md-4 control-label" for="submit"></label>
-                                <div class="col-md-4">
+                                <div class="col-md-4 text-center">
                                     <button type="submit" id="findValue" class="btn btn-primary">Submit</button>
                                 </div>
                             </div>
@@ -104,7 +106,87 @@
                                     <p class="form-control-static bold"><span id="result" style="font-size: 1.5em"></span></p>
                                 </div>
                             </div>
-
+                                
+<hr>
+                            <div class="row">
+                                <div class="col-md-12 text-center">
+                                    <p class="lead">Would you like to know what lifts you'll probably have to hit based on what your goal wilks is? Find out below!</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <h3 class="text-center">Current Lifts</h3>
+                                <hr>
+                                <div class="form-group">
+                                    <label class="col-md-4">Squat</label>
+                                    <div class="col-md-4">
+                                        <input type="text" id="currentSquat" class="form-control" />
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-md-4">Bench</label>
+                                    <div class="col-md-4">
+                                        <input type="text" id="currentBench" class="form-control" />
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-md-4">Deadlift</label>
+                                    <div class="col-md-4">
+                                        <input type="text" id="currentDead" class="form-control" />
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-md-4">Total</label>
+                                    <div class="col-md-4">
+                                        <span id="currentTotal"></span>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-md-4">Wilks</label>
+                                    <div class="col-md-4">
+                                        <span id="currentWilks"></span>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-md-4">Goal Wilks</label>
+                                    <div class="col-md-4">
+                                        <input type="text" id="goalWilks" class="form-control" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <h3 class="text-center">Goal Lifts (LB/KG)</h3>
+                                <hr>
+                                <div class="form-group">
+                                    <label class="col-md-4">Squat</label>
+                                    <div class="col-md-4">
+                                        <span id="goalSquat"></span><span id="goalSquatKG"></span>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-md-4">Bench</label>
+                                    <div class="col-md-4">
+                                        <span id="goalBench"></span><span id="goalBenchKG"></span>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-md-4">Deadlift</label>
+                                    <div class="col-md-4">
+                                        <span id="goalDead"></span><span id="goalDeadKG"></span>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-md-4">Total</label>
+                                    <div class="col-md-4">
+                                        <span id="goalTotal"></span><span id="goalTotalKG"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-md-12 text-center">
+                                    <button type="button" class="btn btn-primary" id="submitGoal">Submit</button>
+                                </div>
+                            </div>
+                            <hr>
                         </form> 
                     </div>
                 </div> 
@@ -114,7 +196,7 @@
             </div>
         </div>
 
-     <?php include 'footer.html'; ?>
+    <?php include 'footer.html'; ?>
 
 
 

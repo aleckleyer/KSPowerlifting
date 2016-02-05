@@ -2,7 +2,7 @@
 
 <head>
     <title>
-        KSPowerlifting - Forum
+        KSPowerlifting - Macro Finder
     </title>
     <meta charset="utf-8" />
     <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
@@ -23,13 +23,9 @@
 <body>
   <div class="background"></div>
 
+    <?php include 'nav.html'; ?>
 
-
-  <?php include 'nav.html'; ?>
-
-
-
-<div class="container">
+    <div class="container">
         <div class="row">
                 <?php include 'leftpanel.html'; ?>
             
@@ -41,12 +37,10 @@
 
 
                 <?php include 'rightpanel.html'; ?>
-            </div>
         </div>
+    </div>
 
      <?php include 'footer.html'; ?>
-
-
 
     <script src="wilks.js"></script>
 

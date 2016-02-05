@@ -22,20 +22,22 @@
 
 <body>
 
+  <div class="background"></div>
 
 
   <?php include 'nav.html'; ?>
 
 
 
-<div class="container-fluid">
+<div class="container">
         <div class="row">
                 <?php include 'leftpanel.html'; ?>
             
-                <div class="col-sm-8">
+                <div class="col-md-offset-1 col-md-6 mainPanel">
                     <div class="text-center">
                     <h1>Pounds and Kilo Conversion</h1>
                     </div>
+                    <div class="addedPadding">
                     <form class="form-horizontal">
                         <div class="form-group">
                             <div class="row">
@@ -64,6 +66,7 @@
                             </div>
                         </div>
                     </form>
+                    </div>
                     <div class="row">
                         <div class="col-md-12">
                             <p>If you would prefer the kg and lb conversion <b>chart</b>, <a href="KG2LB.pdf">click here!</a></p>

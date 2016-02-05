@@ -21,17 +21,19 @@
 </head>
 
 <body>
+  <div class="background"></div>
 
     <?php include 'nav.html'; ?>
 
-    <div class="container-fluid">
+    <div class="container">
         <div class="row">
                 <?php include 'leftpanel.html'; ?>
             
-                <div class="col-sm-8">
+                <div class="col-md-offset-1 col-md-6 mainPanel">
                     <div class="text-center">
                     <h1>1 Rep Max Calculator</h1>
                     </div>
+                    <div class="addedPadding">
                     <form class="form-horizontal">
                         <div class="form-group">
                             <div class="row">
@@ -58,6 +60,7 @@
                             </div>
                         </div>
                     </form>
+                    </div>
                 </div>
 
 
